@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="javascript/index.js"></script>
+    <title>RevoU_Project</title>
+</head>
+
+<body>
+    <!-- judul -->
+    <h1 class="title">RevoU Project</h1>
+    <p class="subtitle">Menghitung Luas & Keliling Bangun Datar Segitiga & Jajar Genjang </br>
+        Mini Coding Project by Elga Syahira 
+    </p>
+
+    <!-- navbar -->
+    <header>
+        <nav>
+            <div class="navbar">
+                <a href="#AreaTriangle">Luas Segitiga</a>
+                <a href="#PerimeterTriangle">Keliling Segitiga</a>
+                <a href="#AreaParallelogram">Luas Jajargenjang</a>
+                <a href="#PerimeterParallelogram">Keliling Jajargenjang</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- hitung luas segitiga -->
+        <section id="AreaTriangle">
+            <div class="card">
+                <div>
+                    <h2>Luas Segitiga</h2>
+                    <img src="assets/Segitiga.png" alt="luas dan keliling segitiga" style="display: block;
+                    margin: auto;">
+                </div>
+                <div class="formula">
+                    <h3>Rumus Luas</h3>
+                    <p>L = 1/2 x a x t</p>
+                </div>
+                <div>
+                    <p>Dimana:</p>
+                    <p>L = Luas</p>
+                    <p>a = Alas Segitiga</p>
+                    <p>t = Tinggi Segitiga</p>
+                </div>
+                <div class="form-count">
+                    <h1>Hitung Luas Segitiga</h1>
+                    <form action="" class="form-input" id="luas_segitiga">
+                        <input type="number" placeholder="Masukkan Alas Segitiga" id="alasLuas" name="alasLuas">
+                        <input type="number" placeholder="Masukkan Tinggi Segitiga" id="tinggiLuas" name="tinggiLuas">
+                        <div id="OutputLuasSegitiga"></div>
+                        <button id="btnLuasSegitiga" value="btnLuasSegitiga"
+                            onclick="hitungLuasSegitiga(event);">Hitung</button>
+                        <button type="reset" value="Reset" onclick="hapusPerhitungan1(event);">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- hitung keliling segitiga -->
+        <section id="PerimeterTriangle">
+            <div class="card">
+                <div>
+                    <h2>Keliling Segitiga</h2>
+                    <img src="assets/Segitiga.png" alt="luas dan keliling segitiga" style="display: block;
+                    margin: auto;">
+                </div>
+                <div class="formula">
+                    <h3>Rumus Keliling</h3>
+                    <p>K = a + b + c</p>
+                </div>
+                <div>
+                    <p>Dimana:</p>
+                    <p>a = Sisi 1</p>
+                    <p>b = Sisi 2</p>
+                    <p>c = Sisi 3</p>
+                </div>
+                <div class="form-count">
+                    <h1>Hitung Keliling Segitiga</h1>
+                    <form action="" class="form-input" id="keliling_segitiga">
+                        <input type="number" placeholder="Masukkan Sisi Pertama" id="S1Segitiga" name="S1Segitiga">
+                        <input type="number" placeholder="Masukkan Sisi Kedua" id="S2Segitiga" name="S2Segitiga">
+                        <input type="number" placeholder="Masukkan Sisi Ketiga" id="S3Segitiga" name="S3Segitiga">
+                        <div id="OutputKelilingSegitiga"></div>
+                        <button id="btnKelilingSegitiga" value="btnKelilingSegitiga"
+                            onclick="hitungKelilingSegitiga(event);">Hitung</button>
+                        <button type="reset" value="Reset" onclick="hapusPerhitungan2(event);">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- hitung luas jajargenjang -->
+        <section id="AreaParallelogram">
+            <div class="card">
+                <div>
+                    <h2>Luas Jajargenjang</h2>
+                    <img src="assets/jajargenjang1.jpg" alt="luas dan keliling Jajargenjang" style="display: block;
+                            margin: auto;" width="480" height="250">
+                </div>
+                <div class="formula">
+                    <h3>Rumus Luas</h3>
+                    <p>L = a x t</p>
+                </div>
+                <div>
+                    <p>Dimana:</p>
+                    <p>L = Luas Jajargenjang</p>
+                    <p>a = Alas Jajargenjang</p>
+                    <p>t = Tinggi Jajargenjang</p>
+                </div>
+                <div class="form-count">
+                    <h1>Hitung Luas Jajargenjang</h1>
+                    <form action="" class="form-input" id="luas_jajargenjang">
+                        <input type="number" placeholder="Masukkan Alas Jajargenjang" id="alasJajargenjang" name="alasJajargenjang">
+                        <input type="number" placeholder="Masukkan Tinggi Jajargenjang" id="tinggiJajargenjang" name="tinggiJajargenjang">
+                        <div id="OutputLuasJajargenjang"></div>
+                        <button id="btnLuasJajargenjang" value="btnLuasJajargenjang"
+                            onclick="hitungLuasJajargenjang(event);">Hitung</button>
+                        <button type="reset" value="Reset" onclick="hapusPerhitungan3(event);">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- hitung Keliling Jajargenjang -->
+        <section id="PerimeterParallelogram">
+            <div class="card">
+                <div>
+                    <h2>Keliling Jajargenjang</h2>
+                    <img src="assets/jajargenjang1.jpg" alt="luas dan keliling Jajargenjang" style="display: block;
+                            margin: auto;" width="480" height="250">
+                </div>
+                <div class="formula">
+                    <h3>Rumus Keliling</h3>
+                    <p>K = 2 x (AB + BC)</p>
+                </div>
+                <div>
+                    <p>Dimana:</p>
+                    <p>K = Keliling Jajargenjang</p>
+                    <p>AB = Panjang Jajargenjang</p>
+                    <p>BC = Lebar Jajargenjang</p>
+                </div>
+                <div class="form-count">
+                    <h1>Hitung Keliling Jajargenjang</h1>
+                    <form action="" class="form-input" id="keliling_jajargenjang">
+                        <input type="number" placeholder="Masukkan Panjang Jajargenjang" id="panjangJajargenjang" name="panjangJajargenjang">
+                        <input type="number" placeholder="Masukkan Lebar Jajargenjang" id="lebarJajargenjang" name="lebarJajargenjang">
+                        <div id="OutputKelilingJajargenjang"></div>
+                        <button id="btnKelilingJajargenjang" value="btnKelilingJajargenjang"
+                            onclick="hitungKelilingJajargenjang(event);">Hitung</button>
+                        <button type="reset" value="Reset" onclick="hapusPerhitungan4(event);">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- footer -->
+        <footer class="footer">Copyright Elga Syahira, 2023 at RevoU</footer>
+    </main>
+
+
+
+</body>
+
+</html>
